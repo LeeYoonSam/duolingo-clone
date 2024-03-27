@@ -42,8 +42,19 @@ GitHub: https://github.com/AntonioErdeljac/next14-duolingo-clone
 
 ## Intro & Demo
 ## Project Setup
+- shadcn/ui 설정
+```shell
+npx shadcn-ui@latest init
+✔ Which style would you like to use? › Default
+✔ Which color would you like to use as base color? › Slate
+✔ Would you like to use CSS variables for colors? … no / yes
+```
+- tailwind extention 설치
+- shadcn-ui button 추가
+  - `npx shadcn-ui@latest add button`
+
 ## Buttons library
-## Marketing Skeleton
+## Marketing Skeleton/
 ## Authentication
 ## Footer
 ## Main Layout
