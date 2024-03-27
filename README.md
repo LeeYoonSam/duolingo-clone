@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Duo Lingo Clone
 
-## Getting Started
+👨‍💻 Source Code & More: https://www.codewithantonio.com/projects/duolingo-clone
+GitHub: https://github.com/AntonioErdeljac/next14-duolingo-clone
 
-First, run the development server:
+## 라이브러리
+- Clerk: https://go.clerk.com/wmPbEeD
+- Kenney Assets:https://kenney.nl/
+- Freesound: https://freesound.org/
+- Elevenlabs AI: https://elevenlabs.io/
+- Flagpack: https://flagpack.xyz/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 학습 요약
+- 이 11시간짜리 튜토리얼에서는 듀오링고와 유사한 나만의 언어 학습 SaaS를 만드는 방법을 배웁니다. 
+- 사용자는 언어 코스를 선택할 수 있으며 아름다운 디자인, 캐릭터, 오디오 및 시각 효과가 포함된 가이드 레슨을 받을 수 있습니다. 
+- Next.js 14, Drizzle ORM, PostgreSQL, 서버 액션, Stripe, ShadcnUI, Tailwind 등을 배우게 됩니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features
+- 🌐 Next.js 14 & server actions
+- 🗣 AI Voices using Elevenlabs AI
+- 🎨 Beautiful component system using Shadcn UI
+- 🎭 Amazing characters thanks to KenneyNL
+- 🔐 Auth using Clerk
+- 🔊 Sound effects
+- ❤️ Hearts system
+- 🌟 Points / XP system
+- 💔 No hearts left popup
+- 🚪 Exit confirmation popup
+- 🔄 Practice old lessons to regain hearts
+- 🏆 Leaderboard
+- 🗺 Quests milestones
+- 🛍 Shop system to exchange points with hearts
+- 💳 Pro tier for unlimited hearts using Stripe
+- 🏠 Landing page
+- 📊 Admin dashboard React Admin
+- 🌧 ORM using DrizzleORM
+- 💾 PostgresDB using NeonDB
+- 🚀 Deployment on Vercel
+- 📱 Mobile responsiveness
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Intro & Demo
+## Project Setup
+## Buttons library
+## Marketing Skeleton
+## Authentication
+## Footer
+## Main Layout
+## Sidebar
+## Learn Page Wrappers
+## Drizzle & Neon
+## Courses Page
+## User Progress
+## Seed Script
+## Schema
+## Units
+## Lesson Button
+## Course Progress
+## Lesson Header
+## Exit Modal
+## Challenge Cards
+## Challenge Footer
+## Challenge Actions
+## Challenge Finish Screen
+## Challenge Practice
+## Shop
+## Stripe
+## Details
+## Admin
+## Deployment
