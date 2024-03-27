@@ -54,6 +54,11 @@ npx shadcn-ui@latest init
   - `npx shadcn-ui@latest add button`
 
 ## Buttons library
+- app/buttons/page.tsx 생성
+  - Variants 별 버튼 화면
+- components/ui/button.tsx 수정
+  - 버튼 variants, sizse 전체 커스터마이징
+
 ## Marketing Skeleton/
 ## Authentication
 ## Footer
