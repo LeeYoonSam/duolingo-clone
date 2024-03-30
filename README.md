@@ -59,7 +59,15 @@ npx shadcn-ui@latest init
 - components/ui/button.tsx 수정
   - 버튼 variants, sizse 전체 커스터마이징
 
-## Marketing Skeleton/
+## Marketing Skeleton
+- app/page.tsx -> app/(marketing)/page.tsx 폴더 이동
+- app/(marketing)/layout.tsx 생성
+  - 공통 레이아웃 생성 (헤더, 푸터)
+- app/(marketing)/header.tsx 생성
+  - 헤더 정보
+- app/(marketing)/footer.tsx 생성
+  - 푸터 정보
+
 ## Authentication
 ## Footer
 ## Main Layout
