@@ -115,6 +115,14 @@ npx shadcn-ui@latest init
 
 
 ## Sidebar
+- public 사이드바 이미지 추가
+- components/sidebar-item.tsx 생성
+  - 사이드바 메뉴 아이템 컴포넌트 추가
+  - 아이콘, 라벨, 링크 데이터로 메뉴 만들기
+- components/sidebar.tsx 수정
+  - 사이드바 아이템 컴포넌트 적용
+  
+
 ## Learn Page Wrappers
 ## Drizzle & Neon
 ## Courses Page
