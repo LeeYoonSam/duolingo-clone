@@ -53,11 +53,13 @@ npx shadcn-ui@latest init
 - shadcn-ui button 추가
   - `npx shadcn-ui@latest add button`
 
+
 ## Buttons library
 - app/buttons/page.tsx 생성
   - Variants 별 버튼 화면
 - components/ui/button.tsx 수정
   - 버튼 variants, sizse 전체 커스터마이징
+
 
 ## Marketing Skeleton
 - app/page.tsx -> app/(marketing)/page.tsx 폴더 이동
@@ -67,6 +69,7 @@ npx shadcn-ui@latest init
   - 헤더 정보
 - app/(marketing)/footer.tsx 생성
   - 푸터 정보
+
 
 ## Authentication
 - [Clerk 어플리케이션 생성 및 설정](https://clerk.com/docs/quickstarts/nextjs?_gl=1*goi63*_gcl_au*MTE3OTIyNTAzMC4xNzExMjc3NDk4*_ga*NjYxMjQ0MTMzLjE3MDA3NDY5ODM.*_ga_1WMF5X234K*MTcxMTc4MjY0NC4xMi4xLjE3MTE3ODI2NzUuMC4wLjA.)
@@ -86,7 +89,13 @@ npx shadcn-ui@latest init
 - `app/(marketing)/page.tsx` 수정
   - 로그인 / 미로그인 상태에 따라 UI 분기 처리
 
+
 ## Footer
+- public 국기 이미지 추가
+- app/(marketing)/footer.tsx 수정
+  - 국가별 국기 추가
+
+
 ## Main Layout
 ## Sidebar
 ## Learn Page Wrappers
