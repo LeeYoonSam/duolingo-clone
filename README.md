@@ -69,6 +69,23 @@ npx shadcn-ui@latest init
   - 푸터 정보
 
 ## Authentication
+- [Clerk 어플리케이션 생성 및 설정](https://clerk.com/docs/quickstarts/nextjs?_gl=1*goi63*_gcl_au*MTE3OTIyNTAzMC4xNzExMjc3NDk4*_ga*NjYxMjQ0MTMzLjE3MDA3NDY5ODM.*_ga_1WMF5X234K*MTcxMTc4MjY0NC4xMi4xLjE3MTE3ODI2NzUuMC4wLjA.)
+- `npm install @clerk/nextjs`
+- `.env` 생성
+  - clerk key 추가
+- `middleware.ts` 생성
+  - publicRoutes 추가
+- `app/layout.tsx` 수정
+  - ClerkProvider 추가
+- svg 이미지 추가
+  - `public/hero.svg`
+  - `public/mascot.svg`
+- `app/(marketing)/header.tsx` 수정
+  - 로고 추가
+  - 로그인 버튼 추가
+- `app/(marketing)/page.tsx` 수정
+  - 로그인 / 미로그인 상태에 따라 UI 분기 처리
+
 ## Footer
 ## Main Layout
 ## Sidebar
