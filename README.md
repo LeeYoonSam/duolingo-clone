@@ -97,6 +97,23 @@ npx shadcn-ui@latest init
 
 
 ## Main Layout
+- `app/(main)/layout.tsx` 생성
+  - 메인 폴더 레이아웃 추가
+- `app/(main)/learn/page.tsx` 생성
+  - learn 페이지 추가
+- `components/sidebar.tsx` 생성
+  - sidebar는 재사용 가능하도록 만들기 위해 componenets 에 만듦
+- `components/mobile-header.tsx` 생성
+  - lg 이하에서는 모바일 헤더가 보이도록 교체
+- `components/mobile-sidebar.tsx` 생성
+  - 모바일 헤더에서 보여줄 mobile 용 사이드바
+  - Sheet 로 구현해서 sidebar 를 재활용해서 표현
+
+### dependencies
+- `npx shadcn-ui@latest add sheet`
+  - MobileHeader 에서 사용할 sheet
+
+
 ## Sidebar
 ## Learn Page Wrappers
 ## Drizzle & Neon
