@@ -144,6 +144,61 @@ npx shadcn-ui@latest init
 
 
 ## Drizzle & Neon
+- 로컬 mysql 로는 어떻게 사용하는지 검토!
+
+### [Drizzle](https://orm.drizzle.team/docs/get-started-postgresql)
+- 드리즐 스튜디오는 드리즐 구성 파일을 가져와 데이터베이스에 연결하고 기존 드리즐 SQL 스키마를 기반으로 모든 것을 탐색, 추가, 삭제 및 업데이트할 수 있습니다.
+- 명시적 null 및 빈 문자열 값, 부울, 숫자 및 큰 정수, json 객체 및 json 배열을 지원합니다.
+
+**DrizzleKit Setting**
+- Dependencies
+  - `npm i drizzle-orm @neondatabase/serverless`
+  - `npm i -D drizzle-kit`
+- package.json
+  - script 작성
+  - `npm run db:studio`
+  - `npm run db:push`
+- db/drizzle.ts 생성
+  - 디비 연결 정보
+- db/schema.ts 생성
+  - 스키마 정보
+- `npm i dotenv`
+  - Dotenv는 .env 파일에서 process.env로 환경 변수를 로드하는 제로 종속성 모듈입니다. 
+  - 코드와 별도로 환경에 구성을 저장하는 것은 12요소 앱 방법론을 기반으로 합니다.
+- `npm run db:push`
+- `npm i -D pg`
+- `npm run db:studio`
+
+### MySQL 간단 명령어
+```bash
+mysql> status;
+```
+- mysql 연결 상태 정보
+
+```bash
+mysql> show databases;
+```
+- Database 리스트
+
+```bash
+mysql> CREATE DATABASE somedatabase;
+```
+- 데이터베이스 생성
+
+```bash
+mysql> select database();
+```
+- 현재 사용중인 데이터 베이스 조회
+
+```bash
+mysql> use somedatabase;
+Database changed
+```
+- 데이터베이스 사용
+
+- [Prisma Database Connector - MySQL](https://www.prisma.io/docs/concepts/database-connectors/mysql)
+
+
 ## Courses Page
 ## User Progress
 ## Seed Script
