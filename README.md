@@ -124,6 +124,25 @@ npx shadcn-ui@latest init
   
 
 ## Learn Page Wrappers
+- app/(main)/layout.tsx 수정
+  - 레드 배경 제거 및 css 수정
+- app/(main)/learn/page.tsx 수정
+    - StickyWrapper 추가
+    - FeedWrapper 추가
+- components/sticky-wrapper.tsx 생성
+  - StickyWrapper 컴포넌트
+- components/feed-wrapper.tsx 생성
+  - FeedWrapper 컴포넌트
+- app/(main)/learn/header.tsx 생성
+  - 헤더 컴포넌트 추가
+  - 뒤로가기 버튼, 타이틀 추가
+- components/user-progress.tsx 생성
+  - 오른쪽에 고정된 유저 진행상황 컴포넌트
+- 이미지 추가
+  - public/heart.svg
+  - public/points.svg
+
+
 ## Drizzle & Neon
 ## Courses Page
 ## User Progress
