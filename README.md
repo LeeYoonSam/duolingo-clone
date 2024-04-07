@@ -200,6 +200,18 @@ Database changed
 
 
 ## Courses Page
+- `db/queries.ts` 생성
+  - getCourses - 코스 데이터 가져오기
+- `app/(main)/courses/page.tsx` 생성
+  - /courses 페이지 생성
+  - 언어 코스 선택
+- `app/(main)/courses/list.tsx` 생성
+  - 코스 선택 리스트 컴포넌트
+- `app/(main)/courses/card.tsx` 생성
+  - 코스 선택 아이템 카드 컴포넌트
+  - 국기, 언어 이름 표시
+
+
 ## User Progress
 ## Seed Script
 ## Schema
