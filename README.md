@@ -213,6 +213,34 @@ Database changed
 
 
 ## User Progress
+- db/schema.ts 수정
+  - userProgress 테이블 추가
+  - courses, userProgress 간 relation 연결
+- db/queries.ts 수정
+  - 유저에 해당하는 코스 진행 상황 가져오기
+  - 코스 정보 가져오기
+- app/(main)/courses/page.tsx 수정
+  - UserProgress 가져와서 코스 표시
+- app/(main)/learn/page.tsx 수정
+  - UserProgress 정보를 가져와서 진행중인 코스가 없으면 리디렉트 처리
+- loading.tsx 생성
+  - Page root 에 loading 을 추가하면 자동으로 표시됨
+- actions/user-progress.ts 생성
+  - User 진행 상황을 데이터베이스에 업데이트 할 액션
+- app/(main)/courses/list.tsx 수정
+  - 코스 클릭시 코스 정보 저장 및 Learn 페이지 리디렉트
+  - 카드 클릭 연결
+- app/layout.tsx 수정
+  - Body 안에 Toaster 추가
+
+### dependencies
+- `npx shadcn-ui@latest add sonner`
+  - 토스터
+
+### Note
+- upsert: UPDATE + INSERT 합성어
+
+
 ## Seed Script
 ## Schema
 ## Units
