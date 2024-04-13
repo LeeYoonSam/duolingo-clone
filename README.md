@@ -242,6 +242,24 @@ Database changed
 
 
 ## Seed Script
+- scripts/seed.ts 생성
+  - 데이터베이스 초기화 및 언어 학습 정보 기초 생성
+- package.json 수정
+  - seed.ts 실행 스크립트 추가
+  - tsx 라이브러리 사용
+- app/(main)/learn/page.tsx 수정
+  - 선택된 언어 코스로 헤더 타이틀 변경
+
+### dependencies
+- `npm i -D tsx`
+  - 타입 스크립트 실행
+
+### Notes
+- tsx 대안으로 [bun](https://bun.sh/) 사용 가능
+  - Bun으로 JavaScript 및 TypeScript 프로젝트를 개발, 테스트, 실행, 번들링
+  - Bun은 번들러, 테스트 런처, Node.js 호환 패키지 관리자가 포함된 속도를 위해 설계된 올인원 JavaScript 런타임 및 툴킷
+
+
 ## Schema
 ## Units
 ## Lesson Button
