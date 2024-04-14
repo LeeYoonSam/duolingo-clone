@@ -271,6 +271,14 @@ Database changed
 
 
 ## Units
+- scripts/seed.ts 수정
+  - unit, lessons, challenge, challengeOptions 초기 데이터베이스 추가
+- db/queries.ts 수정
+  - getUnits 작성
+- app/(main)/learn/page.tsx 수정
+  - unit 정보 Json 으로 임시 표시
+
+  
 ## Lesson Button
 ## Course Progress
 ## Lesson Header
