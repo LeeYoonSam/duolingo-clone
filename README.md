@@ -261,6 +261,15 @@ Database changed
 
 
 ## Schema
+- db/schema.ts 수정
+  - table, relations 생성
+    - units
+    - lessons
+    - challenges
+    - challenge_options
+    - challenge_progress
+
+
 ## Units
 ## Lesson Button
 ## Course Progress
