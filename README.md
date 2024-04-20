@@ -298,6 +298,15 @@ Database changed
 
 
 ## Course Progress
+- db/queries.ts 수정
+  - getCourseProgress: 진행중인 코스 가져오기
+  - getLesson: 레슨 정보 가져오기
+  - getLessonPercentage: 레슨 진행률 가져오기
+- app/(main)/learn/page.tsx 수정
+  - activeLesson 디비 데이터 추가
+  - activeLessonPercentage 디비 데이터 추가
+
+
 ## Lesson Header
 ## Exit Modal
 ## Challenge Cards
