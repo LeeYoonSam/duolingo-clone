@@ -280,6 +280,23 @@ Database changed
 
   
 ## Lesson Button
+- db/queries.ts 수정
+  - getUnit - userId 비교 추가
+- app/(main)/learn/page.tsx 수정
+  - Unit 추가
+- app/(main)/learn/unit.tsx 생성
+  - Unit 컴포넌트
+- app/(main)/learn/unit-banner.tsx 생성
+  - 코스 경로에서 보여지는 레슨 유닛 배너
+- app/(main)/learn/lesson-button.tsx 생성
+  - 코스 경로에서 보여지는 레슨 버튼
+  - react-circular-progressbar 를 사용해서 버튼의 진행상황 표시
+
+### dependencies
+- npm i react-circular-progressbar
+  - SVG로 제작되고 광범위하게 사용자 정의할 수 있는 원형 진행률 표시줄 컴포넌트입니다.
+
+
 ## Course Progress
 ## Lesson Header
 ## Exit Modal
