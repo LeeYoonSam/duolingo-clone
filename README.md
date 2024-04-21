@@ -323,8 +323,26 @@ Database changed
 ### dependencies
 - npx shadcn-ui@latest add progress
 
-
 ## Exit Modal
+- dialog, zustand 디펜던시 추가
+- store/use-exit-modal.ts 생성
+  - exit modal 상태관리
+- app/layout.tsx 수정
+  - 전역 ExitModal 추가
+- app/lesson/header.tsx 수정
+  - X 버튼 클릭 연결
+- components/modals/exit-modal.tsx 추가
+  - 종료 팝업 추가
+
+
+### dependencies
+- npx shadcn-ui@latest add dialog
+- npm i zustand
+  - 작고 빠르며 확장 가능한 베어본 상태 관리 솔루션입니다. 
+  - Zustand는 훅을 기반으로 하는 편안한 API를 제공합니다
+  - 좀비 자식 문제, React 동시성, 혼합 렌더러 간의 컨텍스트 손실과 같은 일반적인 함정을 처리
+
+
 ## Challenge Cards
 ## Challenge Footer
 ## Challenge Actions
