@@ -308,6 +308,22 @@ Database changed
 
 
 ## Lesson Header
+- db/queries.ts 수정
+  - normalizedData 챌린지가 없을때 예외 처리 추가
+- app/lesson/layout.tsx 생성
+  - lesson 기본 레이아웃
+- app/lesson/page.tsx 생성
+  - 레슨 페이지
+- app/lesson/quiz.tsx 생성
+  - 퀴즈 컴포넌트 추가 
+- app/lesson/header.tsx 생성
+  - 헤더 컴포넌트 추가
+  - shadcn-ui progress 컴포넌트 추가
+
+### dependencies
+- npx shadcn-ui@latest add progress
+
+
 ## Exit Modal
 ## Challenge Cards
 ## Challenge Footer
