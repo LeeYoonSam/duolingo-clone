@@ -334,7 +334,6 @@ Database changed
 - components/modals/exit-modal.tsx 추가
   - 종료 팝업 추가
 
-
 ### dependencies
 - npx shadcn-ui@latest add dialog
 - npm i zustand
@@ -344,6 +343,14 @@ Database changed
 
 
 ## Challenge Cards
+- app/lesson/quiz.tsx 수정
+- app/lesson/question-bubble.tsx 생성
+  - 질문 버블 컴포넌트
+- app/lesson/challenge.tsx 생성
+  - 질문 컴포넌트
+- app/lesson/card.tsx 생성
+  - 정답 카드 컴포넌트
+
 ## Challenge Footer
 ## Challenge Actions
 ## Challenge Finish Screen
