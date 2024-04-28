@@ -374,6 +374,14 @@ Database changed
 
 
 ## Challenge Actions
+- app/lesson/quiz.tsx 수정
+  - footer check 버튼 옵션 선택시 로직 추가
+- actions/challenge-progress.ts 생성
+  - 문제 정답 시 진행 상황 업데이트
+- scripts/seed.ts 수정
+  - 문제 추가
+
+
 ## Challenge Finish Screen
 ## Challenge Practice
 ## Shop
