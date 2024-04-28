@@ -350,8 +350,29 @@ Database changed
   - 질문 컴포넌트
 - app/lesson/card.tsx 생성
   - 정답 카드 컴포넌트
+  - correct, wrong 에 따라 카드 상태 변경
+
 
 ## Challenge Footer
+- Elevenlabs AI 로 소리 만들기
+- app/lesson/card.tsx 수정
+  - 보기 클릭시 음성 재생 추가
+  - react-use 의 useAudio 사용하기
+- app/lesson/quiz.tsx 수정
+  - Footer 추가
+- app/lesson/footer.tsx 생성
+  - Footer 컴포넌트
+  - status 에 따라 상태 변경
+
+### public 음성 파일 추가
+- es_man.mp3
+- es_woman.mp3
+- es_robot.mp3
+
+### dependencies
+- npm i react-use
+
+
 ## Challenge Actions
 ## Challenge Finish Screen
 ## Challenge Practice
