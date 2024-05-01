@@ -376,10 +376,14 @@ Database changed
 ## Challenge Actions
 - app/lesson/quiz.tsx 수정
   - footer check 버튼 옵션 선택시 로직 추가
+    - 성공시 다음 문제 진행
+    - 실패시 하트 감소 및 다시시도 처리
 - actions/challenge-progress.ts 생성
   - 문제 정답 시 진행 상황 업데이트
 - scripts/seed.ts 수정
   - 문제 추가
+- actions/user-progress.ts 수정
+  - 디비에 하트 감소시키는 로직 추가
 
 
 ## Challenge Finish Screen
