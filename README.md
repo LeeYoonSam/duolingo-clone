@@ -387,6 +387,29 @@ Database changed
 
 
 ## Challenge Finish Screen
+- 정답, 오답, 완료 음성 파일 추가
+- scripts/seed.ts 수정
+  - 기본 챌린지 추가
+- app/lesson/quiz.tsx 수정
+  - 챌린지 완료 표시
+  - 보기 선택시 오디오 재생
+  - 챌린지 완료 오디오 자동재생
+  - confetti 효과 추가
+- app/lesson/result-card.tsx 생성
+  - 챌린지 완료 결과 카드 컴포넌트
+  - 
+
+### 리소스 추가
+- correct.wav
+- incorrect.wav
+- finish.mp3
+- finish.svg
+
+### dependencies
+- npm i react-confetti
+  - 종이 꽃가루 애니메이션
+
+
 ## Challenge Practice
 ## Shop
 ## Stripe
