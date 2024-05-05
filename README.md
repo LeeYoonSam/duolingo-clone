@@ -397,7 +397,6 @@ Database changed
   - confetti 효과 추가
 - app/lesson/result-card.tsx 생성
   - 챌린지 완료 결과 카드 컴포넌트
-  - 
 
 ### 리소스 추가
 - correct.wav
@@ -411,6 +410,19 @@ Database changed
 
 
 ## Challenge Practice
+- store/use-hearts-modal.ts 생성
+  - 하트모달에서 사용할 store
+- components/modals/hearts-modal.tsx 생성
+  - 하트모달 컴포넌트
+- app/layout.tsx 수정
+  - HeartsModal 추가
+- app/lesson/quiz.tsx 수정
+  - 정답/오답 선택시 Heart 가 없으면 모달 팝업 표시
+
+### 리소스 추가
+- mascot_bad.svg
+
+
 ## Shop
 ## Stripe
 ## Details
