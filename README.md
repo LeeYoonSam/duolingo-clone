@@ -424,6 +424,15 @@ Database changed
 
 
 ## Shop
+- app/(main)/shop/page.tsx 생성
+  - 상점 페이지
+- app/(main)/shop/items.tsx 생성
+  - 상점의 아이템을 표시하는 컴포넌트
+- actions/user-progress.ts 수정
+  - refillHearts 추가
+    - point 차감 후 하트 풀 리필
+
+
 ## Stripe
 ## Details
 ## Admin
