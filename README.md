@@ -434,6 +434,22 @@ Database changed
 
 
 ## Stripe
+- db/schema.ts 수정
+  - userSubscription 테이블 생성
+- stripe 설치
+- lib/stripe.ts 생성
+  - Stripe 객체 생성
+    - API 버전, Stripe secret 키 추가
+- .env 수정
+  - [Stripe](https://stripe.com/) 대시보드 account 생성
+  - STRIPE_API_KEY 추가
+- 리소스 추가
+  - public/unlimited.svg
+
+### dependencies
+- npm i stripe
+
+
 ## Details
 ## Admin
 ## Deployment
