@@ -445,6 +445,20 @@ Database changed
   - STRIPE_API_KEY 추가
 - 리소스 추가
   - public/unlimited.svg
+- actions/user-subscription.ts 생성
+  - 구독 정보 및 callback url 지정
+  - stripe 세션 생성
+    - 결제 데이터
+    - 메타 데이터
+- db/queries.ts 수정
+  - 현재 구독중인지 정보 반환
+- lib/utils.ts 수정
+  - 절대 경로 생성 유틸 추가
+- app/(main)/shop/page.tsx 수정
+  - 프로 버전 사용 유무에 따라 컴포넌트 상태 변경
+- app/(main)/shop/items.tsx 수정
+  - onUpgrade 프로 버전 전환
+
 
 ### dependencies
 - npm i stripe
