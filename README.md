@@ -551,6 +551,26 @@ export default defineConfig({
 
 
 ## Details
+- app/(main)/learn/page.tsx 수정
+  - 상단 진행 상황 헤더 userSubscription 상태 반영
+- app/lesson/page.tsx 수정
+  - 퀴즈 컴포넌트에 userSubscription 상태 전달
+- app/lesson/quiz.tsx 수정
+  - Props userSubscription type 변경
+- app/lesson/header.tsx 수정
+  - infinite 아이콘 shirink-0 적용
+- actions/user-progress.ts 수정
+  - 리필 카운트 상수 이동
+  - 예외처리 활성화
+- db/queries.ts 수정
+  - getUnits 정렬 적용
+- constants.ts 수정
+  - 공통 상수 관리
+
+### Note
+[Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
+- flex 항목 축소 방식을 제어하기 위한 유틸리티
+- flex 항목이 축소되지 않도록 하려면 `shrink-0` 을 사용
 
 
 ## Admin
