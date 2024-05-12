@@ -458,12 +458,100 @@ Database changed
   - 프로 버전 사용 유무에 따라 컴포넌트 상태 변경
 - app/(main)/shop/items.tsx 수정
   - onUpgrade 프로 버전 전환
+- [Stripe Webhooks 설정](#stripe-webhooks-설정)
+  - app/api/webhooks/stripe/route.ts 생성
+    - stripe 결제가 200으로 성공하면 DB `userSubscription` 테이블에 구독 정보 및 만료 일자 추가
+    - checkout, invoice 에 따라 insert, update 로 처리
+  - .env - STRIPE_WEBHOOK_SECRET 추가
+  - middleware.ts 수정
+    ```ts
+    export default authMiddleware({
+      publicRoutes: ["/", "/api/webhooks/stripe"],
+    });
+    ```
+    - publicRoutes webhooks api 추가
+  - 
 
+### [Stripe Webhooks](https://dashboard.stripe.com/test/webhooks) 설정
+- [로컬 테스트 설치](https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local)
+
+1. stripe 로그인
+
+```bash
+stripe login
+
+Your pairing code is: lively-merit-rosy-serene
+This pairing code verifies your authentication with Stripe.
+Press Enter to open the browser or visit https://dashboard.stripe.com/stripecli/confirm_auth?t=some_key
+```
+- 링크로 이동
+  - Stripe CLI가 계정 정보에 액세스할 수 있도록 허용하시겠습니까? **Allow access** 클릭
+  - Access granted - CLI 로 돌아가기
+
+2. stripe listen forward 경로 설정
+```bash
+stripe listen --forward-to localhost:3000/api/webhooks/stripe
+
+A newer version of the Stripe CLI is available, please update to: v1.19.4
+> Ready! You are using Stripe API Version [2024-04-10]. Your webhook signing secret is your_secret (^C to quit)
+```
+- forward-to 경로를 실제 webhooks 처리할곳으로 변경
+- your_secret 부분이 사용할 secret key
+- stripe 이벤트 트리거 이후 -> http status code 200 확인
+
+3. stripe CLI로 이벤트 트리거
+```bash
+stripe trigger payment_intent.succeeded
+```
+
+4. [Settings > Billing > Customer portal](https://dashboard.stripe.com/test/settings/billing/portal) - 테스트 링크 활성화
+Launch customer portal with a link
+- Activate test link
+- 활성화 하면 이미 결제 후 결제 버튼 클릭시 고객 결제 정보 포털로 이동
+
+
+### 예전에 이미 CLI 를 사용해서 오래되어서 키 만료
+- [Stripe - Error codes](https://docs.stripe.com/error-codes#api-key-expired)
+**api_key_expired**
+- The API key provided has expired. Obtain your current API keys from the Dashboard and update your integration to use them.
+- Restricted keys 를 새로 Roll key 해서 재생성
+- `stripe login` 부터 다시 CLI 명령어 실행 하면 완료
+
+### Drizzle 버전 변경으로 인한 config 설정 방법 변경
+**as-is**
+```ts
+import "dotenv/config";
+import type { Config } from "drizzle-kit";
+
+export default {
+  schema: "./db/schema.ts",
+  out: "./drizzle",
+  driver: "pg",
+  dbCredentials: {
+    connectionString: process.env.DATABASE_URL!,
+  },
+} satisfies Config;
+```
+
+**to-be**
+```ts
+import { defineConfig } from 'drizzle-kit'
+export default defineConfig({
+  dialect: "postgresql",
+  schema: "./db/schema.ts",
+  out: "./drizzle",
+  dbCredentials: {
+    url: process.env.DATABASE_URL!,
+  }
+})
+```
 
 ### dependencies
 - npm i stripe
 
 
 ## Details
+
+
 ## Admin
 ## Deployment
