@@ -572,7 +572,9 @@ export default defineConfig({
   - 리더보드 랭킹 뷰 추가
 - db/queries.ts 수정
   - 상위 점수 10명을 가져오는 getTopTenUsers 추가
-
+- app/(main)/quests/page.tsx 생성
+  - 퀘스트 페이지 추가
+  - 퀘스트 항목 추가
 
 ### Note
 [Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
