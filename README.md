@@ -566,11 +566,22 @@ export default defineConfig({
   - getUnits 정렬 적용
 - constants.ts 수정
   - 공통 상수 관리
+- app/(main)/leaderboard/page.tsx 생성
+  - 리더보드 페이지 추가
+  - Separator, Avatar - shadcnui 추가
+  - 리더보드 랭킹 뷰 추가
+- db/queries.ts 수정
+  - 상위 점수 10명을 가져오는 getTopTenUsers 추가
+
 
 ### Note
 [Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
 - flex 항목 축소 방식을 제어하기 위한 유틸리티
 - flex 항목이 축소되지 않도록 하려면 `shrink-0` 을 사용
+
+### dependencies
+- npx shadcn-ui@latest add avatar
+- npx shadcn-ui@latest add separator
 
 
 ## Admin
