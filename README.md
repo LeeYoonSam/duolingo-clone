@@ -601,6 +601,8 @@ export default defineConfig({
 
 
 ## Admin
+
+### Admin - ReactAdmin Base
 - [dependencies](#react-admin) 추가
   - npm i react-admin ra-data-simple-rest
 - app/admin/page.tsx 생성
@@ -609,9 +611,39 @@ export default defineConfig({
   - React Admin Page
   - Courses 리소스 추가
 - app/api/courses/route.ts 생성
+  - GET 메소드 생성
   - Admin Resource 로 사용 할 Courses 를 디비에서 조회 후 제공
 - next.config.mjs 수정
   - source / headers 추가
+
+### Admin - Manage admin site access
+- lib/admin.ts 생성
+  - adminIds 배열에 어드민 관리자 userId 를 넣고 비교해서 admin 유무 판단
+- app/admin/page.tsx 수정
+  - admin 이 아니면 redirect
+- app/api/courses/route.ts 수정
+  - admin 이 아니면 401 에러 반환
+
+### Admin - Custom List, Create, Edit, Delete
+- app/admin/course/list.tsx 수정
+  - 커스텀 리스트 추가
+  - ReactAdmin 컴포넌트 사용
+- app/admin/app.tsx 수정
+  - list, create, edit(delete) 추가
+- app/api/courses/route.ts 수정
+  - POST 메서드 추가
+- app/admin/course/create.tsx 생성
+  - 디비 데이터 생성
+  - POST 로 데이터 생성
+  - ReactAdmin 컴포넌트 사용
+- scripts/reset.ts 추가
+  - 데이터베이스 초기화 스크립트
+- app/admin/course/edit.tsx 생성
+  - 디비 데이터 수정, 삭제 추가
+  - ReactAdmin 컴포넌트 사용
+- app/api/courses/[courseId]/route.ts 생성
+  - Edit 에 필요한 API 생성
+  - GET, PUT, DELETE 로 수정 지원
 
 ### [react-admin](https://www.npmjs.com/package/react-admin)
 ES6, React 및 머티리얼 디자인을 사용하여 REST/GraphQL API를 기반으로 브라우저에서 실행되는 데이터 기반 애플리케이션을 구축하기 위한 프론트엔드 프레임워크입니다. 이전에는 admin-on-rest로 명명되었습니다. 오픈 소스이며 marmelab에서 유지 관리합니다.
