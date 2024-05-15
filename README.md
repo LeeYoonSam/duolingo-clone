@@ -601,4 +601,30 @@ export default defineConfig({
 
 
 ## Admin
+- [dependencies](#react-admin) 추가
+  - npm i react-admin ra-data-simple-rest
+- app/admin/page.tsx 생성
+  - Admin Page
+- app/admin/app.tsx 생성
+  - React Admin Page
+  - Courses 리소스 추가
+- app/api/courses/route.ts 생성
+  - Admin Resource 로 사용 할 Courses 를 디비에서 조회 후 제공
+- next.config.mjs 수정
+  - source / headers 추가
+
+### [react-admin](https://www.npmjs.com/package/react-admin)
+ES6, React 및 머티리얼 디자인을 사용하여 REST/GraphQL API를 기반으로 브라우저에서 실행되는 데이터 기반 애플리케이션을 구축하기 위한 프론트엔드 프레임워크입니다. 이전에는 admin-on-rest로 명명되었습니다. 오픈 소스이며 marmelab에서 유지 관리합니다.
+
+- npm i react-admin
+
+### [ra-data-simple-rest](https://www.npmjs.com/package/ra-data-simple-rest)
+REST/GraphQL 서비스 위에 관리자 애플리케이션을 구축하기 위한 프론트엔드 프레임워크인 react-admin을 위한 간단한 REST 데이터 공급자입니다.
+
+- npm i ra-data-simple-rest
+
+### Note
+- next/dynamic 으로 client side rendering 만들기
+
+
 ## Deployment
