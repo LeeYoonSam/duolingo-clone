@@ -509,7 +509,6 @@ Launch customer portal with a link
 - Activate test link
 - 활성화 하면 이미 결제 후 결제 버튼 클릭시 고객 결제 정보 포털로 이동
 
-
 ### 예전에 이미 CLI 를 사용해서 오래되어서 키 만료
 - [Stripe - Error codes](https://docs.stripe.com/error-codes#api-key-expired)
 **api_key_expired**
@@ -546,6 +545,10 @@ export default defineConfig({
 })
 ```
 
+### Note
+웹훅 listen 을 실행하고 결제 테스트를 해야 웹훅이 정상적으로 작동!
+- `stripe listen --forward-to localhost:3000/api/webhooks/stripe`
+
 ### dependencies
 - npm i stripe
 
@@ -575,6 +578,17 @@ export default defineConfig({
 - app/(main)/quests/page.tsx 생성
   - 퀘스트 페이지 추가
   - 퀘스트 항목 추가
+
+**Propmo / Qeust**
+- components/promo.tsx 생성
+  - 프로모션 컴포넌트
+- components/quests.tsx 생성
+  - 퀘스트 컴포넌트
+- 사이드바 메뉴에 프로모션/퀘스트 컴포넌트 추가
+  - app/(main)/learn/page.tsx
+  - app/(main)/shop/page.tsx
+  - app/(main)/leaderboard/page.tsx
+  - app/(main)/quests/page.tsx
 
 ### Note
 [Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
