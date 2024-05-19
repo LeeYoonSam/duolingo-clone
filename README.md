@@ -659,6 +659,20 @@ export default defineConfig({
   - app/api/lessons 생성
     - lesson 관련 API 생성
 
+### Admin Challenges - List, Create, Edit, Delete
+  - app/admin/challenge 생성
+    - challenge 관련 admin 페이지 생성
+    - create, edit, list 생성
+  - app/api/challenges 생성
+    - challenge 관련 API 생성
+
+### Admin Challenge Options - List, Create, Edit, Delete
+  - app/admin/challengeOption 생성
+    - challengeOption 관련 admin 페이지 생성
+    - create, edit, list 생성
+  - app/api/challengeOptions 생성
+    - challengeOption 관련 API 생성
+
 ### [react-admin](https://www.npmjs.com/package/react-admin)
 ES6, React 및 머티리얼 디자인을 사용하여 REST/GraphQL API를 기반으로 브라우저에서 실행되는 데이터 기반 애플리케이션을 구축하기 위한 프론트엔드 프레임워크입니다. 이전에는 admin-on-rest로 명명되었습니다. 오픈 소스이며 marmelab에서 유지 관리합니다.
 
