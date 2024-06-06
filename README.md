@@ -688,3 +688,6 @@ REST/GraphQL 서비스 위에 관리자 애플리케이션을 구축하기 위�
 
 
 ## Deployment
+- scripts/prod.ts 생성
+- package.json 수정
+  - prod 용 seed 추가
